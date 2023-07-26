@@ -1,0 +1,137 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("POSTGRES_PRISMA_URL") // uses connection pooling
+  directUrl         = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
+  shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING") // used for migrations
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@index([userId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+enum UserRole {
+  STUDENT
+  PROFESSOR
+  ADMIN
+}
+
+model User {
+  id String @id @default(cuid())
+
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  password      String? // Add this field
+  role          UserRole  @default(STUDENT)
+
+  recoveryToken String? @unique
+
+  // Relations
+  accounts Account[]
+  sessions Session[]
+}
+
+enum FileType {
+  // For Students
+  VIDEO
+  WORKSHEET
+  DOCUMENT
+  CODE
+
+  // For Professors
+  ANSWER_KEY
+  BLANK_WORKSHEET
+  DATASET
+
+  // Other (unlabelled)
+  OTHER
+}
+
+model FileCategory {
+  id String @id @default(cuid())
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  name        String
+  subtitle    String @default("") @db.Text
+  description String @default("") @db.Text
+
+  // Relations
+  files File[]
+}
+
+model File {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  name        String
+  description String   @default("") @db.Text
+  type        FileType @default(OTHER)
+  url         String
+
+  // Relations
+  fileUserRoles FileUserRole[]
+
+  category   FileCategory? @relation(fields: [categoryId], references: [id], onDelete: SetNull)
+  categoryId String?
+}
+
+model FileUserRole {
+  id String @id @default(cuid())
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userRole UserRole
+
+  // Relations
+  file   File   @relation(fields: [fileId], references: [id], onDelete: Cascade)
+  fileId String
+}

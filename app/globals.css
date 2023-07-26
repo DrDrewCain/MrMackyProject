@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.balancer-small {
+    font-size: "0.8rem";
+  }
+  

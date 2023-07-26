@@ -1,0 +1,4 @@
+Sitemap: https://Sturman.org/sitemap.xml
+
+User-agent: *
+Disallow: /api
