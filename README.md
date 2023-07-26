@@ -1,5 +1,4 @@
-<a href="https://Sturman.org">
-  <img alt="Sturman building!" src="https://sturman.org/opengraph-image">
+  <img alt="Sturman building!" src="favicon.png">
   <h1 align="center">Human Resource Analytics Simulation: The Case of Mr. Macky's Cajun Cuisine Restaurants</h1>
 </a>
 
