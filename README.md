@@ -1,4 +1,4 @@
-  <img alt="Sturman building!" src="/favicon.png">
+  <img alt="Sturman building!" src="/public/favicon.png">
   <h1 align="center">Human Resource Analytics Simulation: The Case of Mr. Macky's Cajun Cuisine Restaurants</h1>
 </a>
 
