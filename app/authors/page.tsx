@@ -1,5 +1,6 @@
 import Button from "@/components/shared/button";
 import Text from "@/components/shared/text";
+import Image from "next/image";
 
 const button1 = [
   {
@@ -21,10 +22,10 @@ const authors = () => {
     <div className='w-full h-full flex items-center justify-center'>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-1">
         <div>
-          <img src="https://lh3.googleusercontent.com/2DDdnxls1u7BrwxkV3InsMkW41eK14iaVB8hBQlmVhtcOCuFit3Eh69m9lxAi3EDAKquOxgidaE8V1FyRTXUE5fOy2Y_VEoy9F_h3geW7lgc_bXJXuJqrg=w800" 
+          <Image src="https://lh3.googleusercontent.com/2DDdnxls1u7BrwxkV3InsMkW41eK14iaVB8hBQlmVhtcOCuFit3Eh69m9lxAi3EDAKquOxgidaE8V1FyRTXUE5fOy2Y_VEoy9F_h3geW7lgc_bXJXuJqrg=w800" 
                className="img-responsive" 
                data-attach="true" 
-               style={{width:"400px", marginTop: "7.5px"}} 
+                width={400} height={7.5}
                alt="Sturman_Michael_2022sm.jpg" 
           />
         </div>
@@ -64,10 +65,10 @@ const authors = () => {
           </div>
         </div>
         <div>
-          <img src="https://lh3.googleusercontent.com/sttKuvMHI2vrqcMdsdu8Ran1jeoMzQPOee-Hq0RoeXBzxoV-06j18Q2AzOTX7ImEEdp1de3kB2M-HC2tADuBvzs3VSD6eW77Kvn4z6jmZdEVqABCLNSFk-k=w800" 
+          <Image src="https://lh3.googleusercontent.com/sttKuvMHI2vrqcMdsdu8Ran1jeoMzQPOee-Hq0RoeXBzxoV-06j18Q2AzOTX7ImEEdp1de3kB2M-HC2tADuBvzs3VSD6eW77Kvn4z6jmZdEVqABCLNSFk-k=w800" 
                className="img-responsive" 
                data-attach="true" 
-               style={{width:"400px", marginTop: "100.5px"}} 
+               width={400} height={7.5}
                alt="Hanbo_Shim_2022sm.jpg" 
           />
         </div>
