@@ -74,9 +74,9 @@ const courseoutline = () => {
 
       <LabeledSection title="Grading Items" className="mt-8">
         <Text>
-          To enhance the learning experiences of Mr. Macky&apos;s case, we suggest
-          75% of total grades to be earned from the case workbook, while the
-          rest 25% can be accomplished by weekly assignment submissions:
+          To enhance the learning experiences of Mr. Macky&apos;s case, we
+          suggest 75% of total grades to be earned from the case workbook, while
+          the rest 25% can be accomplished by weekly assignment submissions:
         </Text>
       </LabeledSection>
 

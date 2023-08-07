@@ -16,8 +16,8 @@ const DownloadFileButton = ({ file }: DownloadFileButtonProps) => {
     <>
       <Modal showModal={modalOpen} setShowModal={setModalOpen}>
         <div className="flex flex-col bg-white">
-          <div className='flex flex-row'>
-            <div className='flex-1' />
+          <div className="flex flex-row">
+            <div className="flex-1" />
             <button
               onClick={() => setModalOpen(false)}
               data-collapse-toggle="navbar-default"
@@ -53,13 +53,13 @@ const DownloadFileButton = ({ file }: DownloadFileButtonProps) => {
               <div className="flex flex-row gap-4">
                 <Button
                   onClick={() => setModalOpen(false)}
-                  className="!bg-gray-400 hover:!bg-gray-500 !px-16 !py-4 !text-white !rounded-md"
+                  className="!rounded-md !bg-gray-400 !px-16 !py-4 !text-white hover:!bg-gray-500"
                 >
                   CANCEL
                 </Button>
                 <Button
                   href={file.url}
-                  className="!bg-slate-700 hover:!bg-slate-800 !px-16 !py-4 !text-white !rounded-md"
+                  className="!rounded-md !bg-slate-700 !px-16 !py-4 !text-white hover:!bg-slate-800"
                 >
                   OK
                 </Button>

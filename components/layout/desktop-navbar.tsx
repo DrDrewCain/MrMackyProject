@@ -17,10 +17,10 @@ const DesktopNavbar = ({ session }: { session: Session | null }) => {
   const { SignInModal, setShowSignInModal } = useSignInModal();
   const { SignUpModal, setShowSignUpModal } = useSignUpModal();
   const scrolled = useScroll(50);
-  
+
   const dimensions = useWindowSize();
 
-  if(!dimensions.isDesktop) {
+  if (!dimensions.isDesktop) {
     return null;
   }
 
@@ -52,7 +52,7 @@ const DesktopNavbar = ({ session }: { session: Session | null }) => {
           </Link>
 
           <div className="hidden h-16 min-w-min max-w-screen-xl flex-grow items-center justify-between md:flex">
-          <DropdownMenu
+            <DropdownMenu
               items={
                 <DropdownMenuList>
                   <DropdownMenuGroup>
@@ -102,7 +102,7 @@ const DesktopNavbar = ({ session }: { session: Session | null }) => {
                       <p>Signed in as {session?.user?.email}</p>
                     </DropdownMenuItem>
                   </DropdownMenuGroup>
-                  
+
                   <DropdownMenuGroup>
                     <DropdownMenuItem>
                       <Link
@@ -206,23 +206,23 @@ const DesktopNavbar = ({ session }: { session: Session | null }) => {
                     </DropdownMenuItem>
                   </DropdownMenuGroup>
                 </DropdownMenuList>
-              }>
+              }
+            >
               <div className="p-1.3 flex flex-row items-center gap-2 rounded-full border border-black bg-black px-3 text-sm text-white transition-all hover:bg-white hover:text-black">
                 HR Analytics Course
                 <ChevronDown size={16} />
               </div>
             </DropdownMenu>
-            
-          
+
             <Link
               href="/contact"
-              className="p-1.3 rounded-full border border-black bg-black px-3 text-sm text-white transition-all hover:bg-white hover:text-black py-.9"
+              className="p-1.3 py-.9 rounded-full border border-black bg-black px-3 text-sm text-white transition-all hover:bg-white hover:text-black"
             >
               <p>Contact</p>
             </Link>
             <Link
               href="/extra-fun"
-              className="p-1.3 rounded-full border border-black bg-black px-3 text-sm text-white transition-all hover:bg-white hover:text-black py-.9"
+              className="p-1.3 py-.9 rounded-full border border-black bg-black px-3 text-sm text-white transition-all hover:bg-white hover:text-black"
             >
               <p>Extra/Fun</p>
             </Link>

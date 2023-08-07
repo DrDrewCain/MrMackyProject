@@ -21,13 +21,16 @@ const editFileCategorySchema = zod.object({
   description: zod.string(),
 });
 
-interface EditFileCategoryForm extends zod.infer<typeof editFileCategorySchema> {}
+interface EditFileCategoryForm
+  extends zod.infer<typeof editFileCategorySchema> {}
 
 interface EditFileCategoryButtonProps {
   fileCategory: FileCategory;
 }
 
-const EditFileCategoryButton = ({ fileCategory }: EditFileCategoryButtonProps) => {
+const EditFileCategoryButton = ({
+  fileCategory,
+}: EditFileCategoryButtonProps) => {
   const router = useRouter();
 
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -51,7 +54,12 @@ const EditFileCategoryButton = ({ fileCategory }: EditFileCategoryButtonProps) =
 
   const onSubmit = handleSubmit(async (data) => {
     setLoading(true);
-    await editFileCategory(fileCategory.id, data.name, data.subtitle, data.description);
+    await editFileCategory(
+      fileCategory.id,
+      data.name,
+      data.subtitle,
+      data.description,
+    );
     setLoading(false);
     setModalOpen(false);
 

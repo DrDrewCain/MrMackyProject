@@ -8,16 +8,16 @@ const CaseMaterialsPage = () => {
     <div>
       <PageHeader title="Mr. Macky's case materials for HR Analytics course">
         <Text className="text-center">
-          The Case of Mr. Macky&apos;s Cajun Cuisine has been developed and refined
-          to teach students HR Analytics in the Master-level Human Resource
-          Management programs. The case has been used as the primary course
-          material of HR Analytics courses at the Master&apos;s programs of Rutgers
-          University and the University of Texas at Arlington. This workbook has
-          been used (and updated) every semester since Fall 2019, culminating in
-          the current version which presents a comprehensive range of analytical
-          exercises covering various HR topics. We believe this case provides a
-          highly valuable way to teach HR Analytics from which other faculty and
-          students could benefit.
+          The Case of Mr. Macky&apos;s Cajun Cuisine has been developed and
+          refined to teach students HR Analytics in the Master-level Human
+          Resource Management programs. The case has been used as the primary
+          course material of HR Analytics courses at the Master&apos;s programs
+          of Rutgers University and the University of Texas at Arlington. This
+          workbook has been used (and updated) every semester since Fall 2019,
+          culminating in the current version which presents a comprehensive
+          range of analytical exercises covering various HR topics. We believe
+          this case provides a highly valuable way to teach HR Analytics from
+          which other faculty and students could benefit.
         </Text>
         <Text className="text-center">
           The case materials are composed of two key components: (1) Simulated
@@ -68,8 +68,8 @@ const CaseMaterialsPage = () => {
           </Text>
           <Text>
             <b>Validation Study</b> data contain information related to an
-            effort at Mr. Macky&apos;s to improve their hiring practices. The data
-            represents a concurrent validation study in the company for six
+            effort at Mr. Macky&apos;s to improve their hiring practices. The
+            data represents a concurrent validation study in the company for six
             potential selection devices of exempt employees (with data on
             roughly 350 employees).
           </Text>
@@ -81,15 +81,16 @@ const CaseMaterialsPage = () => {
           <Text>
             <b>Engagement Survey Results</b> data contain information collected
             from annual engagement and leadership evaluation surveys distributed
-            to Mr. Macky&apos;s employees over the past seven years. The engagement
-            survey items include the self-rating responses of job satisfaction,
-            collaboration, communication, support, customer focus, personal
-            growth, inclusion, empowerment, and accountability. The leadership
-            survey items include the employees&apos; ratings of their unit managers&apos;
-            vision, staff development, supportive leadership, and innovative
-            thinking. Data are provided for each of the 185 units in each of the
-            past seven years, and summarized by the various categories: exempt,
-            non-exempt, men, women, white, and under-represented minorities.
+            to Mr. Macky&apos;s employees over the past seven years. The
+            engagement survey items include the self-rating responses of job
+            satisfaction, collaboration, communication, support, customer focus,
+            personal growth, inclusion, empowerment, and accountability. The
+            leadership survey items include the employees&apos; ratings of their
+            unit managers&apos; vision, staff development, supportive
+            leadership, and innovative thinking. Data are provided for each of
+            the 185 units in each of the past seven years, and summarized by the
+            various categories: exempt, non-exempt, men, women, white, and
+            under-represented minorities.
           </Text>
           <Text>
             <b>Raw Engagement Survey Data Subset</b> data contain a random (25%)
@@ -121,12 +122,13 @@ const CaseMaterialsPage = () => {
           experiences throughout the semester, we have written a 100-page
           workbook and use this as the course&apos; main project over the entire
           semester. This workbook includes a large number of analytical
-          exercises that accompany the Mr. Macky&apos;s dataset, as well as several
-          short-answer questions. All empirical questions can be solved using
-          Excel&apos;s Analysis Tookpak add-in for statistical analyses, although
-          other statistical packages (e.g., SPSS, R) can be used at the
-          students&apos; or professor&apos;s discretion and skill, thus giving flexibility
-          to the professor as to their courses&apos; instructional methods.
+          exercises that accompany the Mr. Macky&apos;s dataset, as well as
+          several short-answer questions. All empirical questions can be solved
+          using Excel&apos;s Analysis Tookpak add-in for statistical analyses,
+          although other statistical packages (e.g., SPSS, R) can be used at the
+          students&apos; or professor&apos;s discretion and skill, thus giving
+          flexibility to the professor as to their courses&apos; instructional
+          methods.
         </Text>
         <Text>
           Our workbook consists of five modules providing a series of exercises
@@ -142,9 +144,9 @@ const CaseMaterialsPage = () => {
           <Text>
             Students conduct analytics that provide basic foundational
             information including summary information about current employees,
-            employees who had been employed by Mr. Macky&apos;s over the past few
-            years, and on the various units (i.e., individual restaurants) of
-            the restaurant chain. Information determined in this Module will
+            employees who had been employed by Mr. Macky&apos;s over the past
+            few years, and on the various units (i.e., individual restaurants)
+            of the restaurant chain. Information determined in this Module will
             help set up analyses for future modules.
           </Text>
         </LabeledSection>
@@ -157,9 +159,10 @@ const CaseMaterialsPage = () => {
             Students examine the effects associated with managerial performance
             ratings and unit performance. Students also investigate the
             predictors and consequences of employee turnover, relationships with
-            unit performance over time, and models predicting the employees&apos;
-            propensity to leave. They also examine the measure of engagement and
-            investigate its relationship with unit performance.
+            unit performance over time, and models predicting the
+            employees&apos; propensity to leave. They also examine the measure
+            of engagement and investigate its relationship with unit
+            performance.
           </Text>
         </LabeledSection>
         <LabeledSection
@@ -168,10 +171,10 @@ const CaseMaterialsPage = () => {
           titleVariation="paragraphheading"
         >
           <Text>
-            Students explore issues associated with the company&apos;s recruitment
-            and selection efforts, both in terms of the performance ratings of
-            those hired and the diversity of its recruitment and equity within
-            its compensation practices.
+            Students explore issues associated with the company&apos;s
+            recruitment and selection efforts, both in terms of the performance
+            ratings of those hired and the diversity of its recruitment and
+            equity within its compensation practices.
           </Text>
         </LabeledSection>
         <LabeledSection

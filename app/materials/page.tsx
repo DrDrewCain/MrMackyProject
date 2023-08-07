@@ -2,7 +2,6 @@ import TestingWidget from "@/components/testing-widget";
 import Link from "next/link";
 
 const MaterialsPage = () => {
-
   return (
     <div className="container mx-auto max-w-4xl">
       <div className="my-8 bg-white px-4 py-6 shadow">

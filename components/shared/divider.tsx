@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
 interface DividerProps {
-    className?: string;
+  className?: string;
 }
 
-const Divider = ({className}: DividerProps) => {
-  return (
-    <div className={`${className} h-[1px] bg-black my-4`} />
-  )
-}
+const Divider = ({ className }: DividerProps) => {
+  return <div className={`${className} my-4 h-[1px] bg-black`} />;
+};
 
-export default Divider
+export default Divider;

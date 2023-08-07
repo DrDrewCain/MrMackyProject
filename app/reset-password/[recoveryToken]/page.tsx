@@ -14,10 +14,10 @@ const ResetPasswordPage = async ({
   }
 
   return (
-    <div className='w-screen h-[80vh] flex items-center justify-center'>
-        <div className='max-w-xl p-8 shadow-md'>
-            <ResetPasswordForm recoveryToken={params.recoveryToken} />
-        </div>
+    <div className="flex h-[80vh] w-screen items-center justify-center">
+      <div className="max-w-xl p-8 shadow-md">
+        <ResetPasswordForm recoveryToken={params.recoveryToken} />
+      </div>
     </div>
   );
 };

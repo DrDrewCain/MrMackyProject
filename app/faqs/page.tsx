@@ -167,8 +167,8 @@ const FaqsPage = () => {
             variation="headinglabel"
             className="animate-fade-up text-center !text-gray-500"
           >
-            For any related or new questions, please click &apos;Contact&apos; menu above
-            and send us any questions.
+            For any related or new questions, please click &apos;Contact&apos;
+            menu above and send us any questions.
           </Text>
         </div>
       </PageHeader>
@@ -179,7 +179,7 @@ const FaqsPage = () => {
             key={`faq_${index}`}
             title={`Q${index + 1}. ${section.question}`}
             titleVariation="subheading"
-            innerClassName='flex flex-col gap-4'
+            innerClassName="flex flex-col gap-4"
           >
             {section.answer.map((answerBlock, answerIndex) => (
               <Text key={`q_${index}_${answerIndex}`}>{answerBlock}</Text>

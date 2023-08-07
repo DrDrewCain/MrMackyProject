@@ -1,7 +1,5 @@
 "use client";
-import {
-    FileCategory
-} from "@prisma/client";
+import { FileCategory } from "@prisma/client";
 import { deleteFileCategory } from "actions/file-categories/delete-file-category";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -12,7 +10,9 @@ interface DeleteFileCategoryButtonProps {
   fileCategory: FileCategory;
 }
 
-const DeleteFileCategoryButton = ({ fileCategory }: DeleteFileCategoryButtonProps) => {
+const DeleteFileCategoryButton = ({
+  fileCategory,
+}: DeleteFileCategoryButtonProps) => {
   const router = useRouter();
 
   const [modalOpen, setModalOpen] = useState<boolean>(false);
@@ -32,10 +32,14 @@ const DeleteFileCategoryButton = ({ fileCategory }: DeleteFileCategoryButtonProp
     <>
       <Modal showModal={modalOpen} setShowModal={setModalOpen}>
         <div className="flex flex-col gap-4 px-16 py-8 shadow-md">
-          <h2 className="text-xl">Delete file category &quot;{fileCategory.name}&quot;</h2>
+          <h2 className="text-xl">
+            Delete file category &quot;{fileCategory.name}&quot;
+          </h2>
           <p>
-            Are you sure you want to delete the file category <b>{fileCategory.name}</b>? This
-            action cannot be undone. All files in this category will be moved to the &quot;Uncategorized&quot; category.
+            Are you sure you want to delete the file category{" "}
+            <b>{fileCategory.name}</b>? This action cannot be undone. All files
+            in this category will be moved to the &quot;Uncategorized&quot;
+            category.
           </p>
 
           <div className="flex flex-row gap-8">

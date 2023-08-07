@@ -5,7 +5,7 @@ import Text from "@/components/shared/text";
 const TeachingAnalyticsPage = () => {
   return (
     <div>
-      <PageHeader title="Teaching HR Analytics & Purpose of Mr. Macky&apos;s case">
+      <PageHeader title="Teaching HR Analytics & Purpose of Mr. Macky's case">
         <div className="flex flex-col">
           <Text className="text-center">
             Our innovative teaching approach with the simulated datasets,
@@ -23,17 +23,17 @@ const TeachingAnalyticsPage = () => {
 
       <div>
         <LabeledSection
-          title="Purpose of Mr. Macky&apos;s case:"
+          title="Purpose of Mr. Macky's case:"
           titleVariation="subsubheading"
           innerClassName="flex flex-col gap-4"
         >
           <Text>
-            The purpose of Mr. Macky&apos;s is to provide a causal understanding of
-            how HRs contributes to business success, and to give students the
+            The purpose of Mr. Macky&apos;s is to provide a causal understanding
+            of how HRs contributes to business success, and to give students the
             skills to use data to make HR decisions that help support an
-            organization&apos;s mission. Through our HR Analytics course, we teach
-            students the skills they need to identify empirical patterns and
-            relationships that can be used to inform strategic HR
+            organization&apos;s mission. Through our HR Analytics course, we
+            teach students the skills they need to identify empirical patterns
+            and relationships that can be used to inform strategic HR
             decision-making. The recent surge of interest in HR analytics
             pertains to the high demand of HR professionals and organizations
             adopting evidence-based management of human capital.
@@ -105,15 +105,15 @@ const TeachingAnalyticsPage = () => {
           <Text>
             To address the challenges of getting the HR data from an
             organization, we use computer simulations to generate complex HRIS
-            datasets of a hypothetical organization: Mr. Macky&apos;s Cajun Cuisine.
-            This company represents a nation-wide restaurant chain company with
-            145 individual restaurants, a current workforce of nearly 7500
-            employees, and annual revenues exceeding $600 million. Within each
-            unit, there are 11 different job titles for non-exempt employees,
-            and two for exempt employees. The company thus has a large amount of
-            data, but in the scenario are only beginning to consider HR
-            Analytics. Students thus are tasked with moving from simple to
-            complex analytical tasks, across a range of HR functions.
+            datasets of a hypothetical organization: Mr. Macky&apos;s Cajun
+            Cuisine. This company represents a nation-wide restaurant chain
+            company with 145 individual restaurants, a current workforce of
+            nearly 7500 employees, and annual revenues exceeding $600 million.
+            Within each unit, there are 11 different job titles for non-exempt
+            employees, and two for exempt employees. The company thus has a
+            large amount of data, but in the scenario are only beginning to
+            consider HR Analytics. Students thus are tasked with moving from
+            simple to complex analytical tasks, across a range of HR functions.
           </Text>
           <div className="flex flex-col">
             <Text>
@@ -141,9 +141,9 @@ const TeachingAnalyticsPage = () => {
                   thus enhancing the external validity of the data. Yet because
                   the computer simulation process includes measurement error, we
                   can create separate datasets with unique values. In so doing,
-                  we promoted each student&apos;s sense of ownership and individual
-                  learning experiences while avoiding any potential cheating
-                  concerns of course materials.
+                  we promoted each student&apos;s sense of ownership and
+                  individual learning experiences while avoiding any potential
+                  cheating concerns of course materials.
                 </Text>
               </li>
               <li>
@@ -179,17 +179,17 @@ const TeachingAnalyticsPage = () => {
           innerClassName="flex flex-col gap-4"
         >
           <Text>
-            To fully utilize the HRIS dataset and maximize students&apos; learning
-            experiences throughout the semester, we have written a 100-page
-            workbook and use this as the course&apos; main project over the entire
-            semester. This workbook includes a large number of analytical
-            exercises that accompany the Mr. Macky&apos;s dataset, as well as several
-            short-answer questions. All empirical questions can be solved using
-            Excel&apos;s Analysis Tookpak add-in for statistical analyses, although
-            other statistical packages (e.g., SPSS, R) can be used at the
-            students&apos; or professor&apos;s discretion and skill, thus giving
-            flexibility to the professor as to their courses&apos; instructional
-            methods.
+            To fully utilize the HRIS dataset and maximize students&apos;
+            learning experiences throughout the semester, we have written a
+            100-page workbook and use this as the course&apos; main project over
+            the entire semester. This workbook includes a large number of
+            analytical exercises that accompany the Mr. Macky&apos;s dataset, as
+            well as several short-answer questions. All empirical questions can
+            be solved using Excel&apos;s Analysis Tookpak add-in for statistical
+            analyses, although other statistical packages (e.g., SPSS, R) can be
+            used at the students&apos; or professor&apos;s discretion and skill,
+            thus giving flexibility to the professor as to their courses&apos;
+            instructional methods.
           </Text>
           <div className="flex flex-col">
             <Text>
@@ -198,8 +198,8 @@ const TeachingAnalyticsPage = () => {
               the semester. Once each module was graded, students are then given
               the option to “Revise & Resubmit” their incorrect responses to
               master the material (and improve their grades). In so doing,
-              students&apos; learning experiences are enhanced by reviewing their
-              earlier attempts and related feedback. Having utilized this
+              students&apos; learning experiences are enhanced by reviewing
+              their earlier attempts and related feedback. Having utilized this
               workbook for the past semesters, we have found that this workbook
               helped students&apos; learning experiences in the following ways:
             </Text>
@@ -214,7 +214,8 @@ const TeachingAnalyticsPage = () => {
                   readily become a HR analytics project in most organizations.
                   Some of the past students indeed presented their work from the
                   workbook in job interviews, while others adopted workbook
-                  questions to investigate issues using their employer&apos;s data.
+                  questions to investigate issues using their employer&apos;s
+                  data.
                 </Text>
               </li>
               <li>

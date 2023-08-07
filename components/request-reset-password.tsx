@@ -44,7 +44,7 @@ const RequestResetPassword = ({ onClose }: RequestResetPasswordProps) => {
   return (
     <div>
       <div className="flex flex-col space-y-4 bg-gray-50">
-        <h1 className='text-2xl'>Reset Password</h1>
+        <h1 className="text-2xl">Reset Password</h1>
         {/* Render your form inputs */}
         <label htmlFor="email">Email:</label>
         <input

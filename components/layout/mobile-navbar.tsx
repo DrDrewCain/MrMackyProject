@@ -21,25 +21,28 @@ const MobileNavbar = ({ session }: { session: Session | null }) => {
 
   const handleToggleOpen = () => {
     setOpen(!isOpen);
-  }
+  };
 
   useEffect(() => {
     // Close the drawer when the user clicks outside of it
     const handleClickOutside = (event: MouseEvent) => {
-      if (drawerRef.current && !drawerRef.current.contains(event.target as Node)) {
+      if (
+        drawerRef.current &&
+        !drawerRef.current.contains(event.target as Node)
+      ) {
         setOpen(false);
       }
-    }
+    };
 
-    if(isOpen) {
+    if (isOpen) {
       document.addEventListener("mousedown", handleClickOutside);
     } else {
       document.removeEventListener("mousedown", handleClickOutside);
     }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
-    }
-  }, [isOpen])
+    };
+  }, [isOpen]);
 
   if (!dimensions.isMobile) {
     return null;
@@ -131,12 +134,9 @@ const MobileNavbar = ({ session }: { session: Session | null }) => {
 
             <div className="flex h-full w-full flex-col">
               <div className="flex w-full flex-grow flex-col">
-                <CollapsibleMenu
-                  title="About"
-                  innerClassName="w-full flex"
-                >
+                <CollapsibleMenu title="About" innerClassName="w-full flex">
                   <Clickable href="/about" className="w-full px-6 py-2">
-                  Case Overview
+                    Case Overview
                   </Clickable>
                   <Clickable href="/history" className="w-full px-6 py-2">
                     History
@@ -145,14 +145,17 @@ const MobileNavbar = ({ session }: { session: Session | null }) => {
                     Authors
                   </Clickable>
                 </CollapsibleMenu>
-                <CollapsibleMenu
-                  title="Students"
-                  innerClassName="w-full flex"
-                >
-                  <Clickable href="/case-background" className="w-full px-6 py-2">
+                <CollapsibleMenu title="Students" innerClassName="w-full flex">
+                  <Clickable
+                    href="/case-background"
+                    className="w-full px-6 py-2"
+                  >
                     Case Background
                   </Clickable>
-                  <Clickable href="/download-materials" className="w-full px-6 py-2">
+                  <Clickable
+                    href="/download-materials"
+                    className="w-full px-6 py-2"
+                  >
                     Download Materials
                   </Clickable>
                   <Clickable href="/faqs" className="w-full px-6 py-2">
@@ -160,17 +163,23 @@ const MobileNavbar = ({ session }: { session: Session | null }) => {
                   </Clickable>
                 </CollapsibleMenu>
 
-                <CollapsibleMenu
-                  title="Faculty"
-                  innerClassName="w-full flex"
-                >
-                  <Clickable href="/teaching-analytics" className="w-full px-6 py-2">
+                <CollapsibleMenu title="Faculty" innerClassName="w-full flex">
+                  <Clickable
+                    href="/teaching-analytics"
+                    className="w-full px-6 py-2"
+                  >
                     Teaching HR Analytics
                   </Clickable>
-                  <Clickable href="/case-materials" className="w-full px-6 py-2">
+                  <Clickable
+                    href="/case-materials"
+                    className="w-full px-6 py-2"
+                  >
                     Case Materials
                   </Clickable>
-                  <Clickable href="/resources-faculty" className="w-full px-6 py-2">
+                  <Clickable
+                    href="/resources-faculty"
+                    className="w-full px-6 py-2"
+                  >
                     Resources For Faculty
                   </Clickable>
                 </CollapsibleMenu>
@@ -179,7 +188,10 @@ const MobileNavbar = ({ session }: { session: Session | null }) => {
                   title="HR Analytics Course"
                   innerClassName="w-full flex"
                 >
-                  <Clickable href="/course-outline" className="w-full px-6 py-2">
+                  <Clickable
+                    href="/course-outline"
+                    className="w-full px-6 py-2"
+                  >
                     Course Outline
                   </Clickable>
                   <Clickable href="/syllabus" className="w-full px-6 py-2">
@@ -187,11 +199,11 @@ const MobileNavbar = ({ session }: { session: Session | null }) => {
                   </Clickable>
                 </CollapsibleMenu>
                 <Clickable href="/contact" className="w-full px-6 py-2">
-                    Contact
+                  Contact
                 </Clickable>
                 <Clickable href="/extra-fun" className="w-full px-6 py-2">
-                    Fun Extras
-                  </Clickable>
+                  Fun Extras
+                </Clickable>
               </div>
 
               <div className="flex w-full flex-none flex-col">

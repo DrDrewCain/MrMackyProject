@@ -11,35 +11,70 @@ export default async function Home() {
       title: "",
       description: "",
       src: "https://lh3.googleusercontent.com/pw/AIL4fc8Zrvvm-o65vj0bwveDMQIMuyrlEqA3LjkKSSCd8WGDLxQjIW1DlAuPOJuz4Jdpas3Lt-339xNm_O39RKuykMQwY-kJ0EPZ8VT1DCWq0kbI1_4rX8QuTl_6QP4j1fvRtTu9g6Eh9OfxXyZjElLYLsdV=w2244-h1622-s-no",
-      demo: <img src="https://lh3.googleusercontent.com/pw/AIL4fc8Zrvvm-o65vj0bwveDMQIMuyrlEqA3LjkKSSCd8WGDLxQjIW1DlAuPOJuz4Jdpas3Lt-339xNm_O39RKuykMQwY-kJ0EPZ8VT1DCWq0kbI1_4rX8QuTl_6QP4j1fvRtTu9g6Eh9OfxXyZjElLYLsdV=w2244-h1622-s-no" alt="Slide 1" />,
+      demo: (
+        <Image
+          src="https://lh3.googleusercontent.com/pw/AIL4fc8Zrvvm-o65vj0bwveDMQIMuyrlEqA3LjkKSSCd8WGDLxQjIW1DlAuPOJuz4Jdpas3Lt-339xNm_O39RKuykMQwY-kJ0EPZ8VT1DCWq0kbI1_4rX8QuTl_6QP4j1fvRtTu9g6Eh9OfxXyZjElLYLsdV=w2244-h1622-s-no"
+          alt="Slide 1"
+          width={400}
+          height={400}
+        />
+      ),
     },
     {
       id: 2,
       title: "",
       description: "",
       src: "https://lh3.googleusercontent.com/pw/AIL4fc9Cci1HdfaYaWvyuI1JYTfzsZIvRW6Ao1qgIAqJaguSbKggx9O0-y8-h4xtS9OyYusAwMSceoQNwbA3_3cV94XbINmTlNiu95rwNaM8ydHN2BKlgyG5_bDtF3z3GcKcWHQEsaWN-49ojcsJBW2Hm_f_=w1982-h1622-s-no",
-      demo: <img src="https://lh3.googleusercontent.com/pw/AIL4fc9Cci1HdfaYaWvyuI1JYTfzsZIvRW6Ao1qgIAqJaguSbKggx9O0-y8-h4xtS9OyYusAwMSceoQNwbA3_3cV94XbINmTlNiu95rwNaM8ydHN2BKlgyG5_bDtF3z3GcKcWHQEsaWN-49ojcsJBW2Hm_f_=w1982-h1622-s-no" alt="Slide 2" />,
+      demo: (
+        <Image
+          src="https://lh3.googleusercontent.com/pw/AIL4fc9Cci1HdfaYaWvyuI1JYTfzsZIvRW6Ao1qgIAqJaguSbKggx9O0-y8-h4xtS9OyYusAwMSceoQNwbA3_3cV94XbINmTlNiu95rwNaM8ydHN2BKlgyG5_bDtF3z3GcKcWHQEsaWN-49ojcsJBW2Hm_f_=w1982-h1622-s-no"
+          alt="Slide 2"
+          width={400}
+          height={400}
+        />
+      ),
     },
     {
       id: 3,
       title: "",
       description: "",
       src: "https://lh3.googleusercontent.com/pw/AIL4fc9twHX1sWi1StnVrH9SQzKF40SmlvQH_Ooaihu6_FKvMitKpmZyH7s34IRywMjQHZjhYvSXLHxVNOw8cJA7pwhzU2Tw_S2bg0WN-SyAebeXtV0NgqtlNpD2rGygBQunTtBLseVbmaHxdV7IN0xluHR7=w2170-h1622-s-no",
-      demo: <img src="https://lh3.googleusercontent.com/pw/AIL4fc9twHX1sWi1StnVrH9SQzKF40SmlvQH_Ooaihu6_FKvMitKpmZyH7s34IRywMjQHZjhYvSXLHxVNOw8cJA7pwhzU2Tw_S2bg0WN-SyAebeXtV0NgqtlNpD2rGygBQunTtBLseVbmaHxdV7IN0xluHR7=w2170-h1622-s-no" alt="Slide 3" />,
+      demo: (
+        <Image
+          src="https://lh3.googleusercontent.com/pw/AIL4fc9twHX1sWi1StnVrH9SQzKF40SmlvQH_Ooaihu6_FKvMitKpmZyH7s34IRywMjQHZjhYvSXLHxVNOw8cJA7pwhzU2Tw_S2bg0WN-SyAebeXtV0NgqtlNpD2rGygBQunTtBLseVbmaHxdV7IN0xluHR7=w2170-h1622-s-no"
+          alt="Slide 3"
+          width={400}
+          height={400}
+        />
+      ),
     },
     {
       id: 4,
       title: "",
       description: "",
       src: "https://lh3.googleusercontent.com/pw/AIL4fc8KdhNNe2o7KwzXZU5QR2mhbD9eyRcQlOVDFLqCp8pnfDAANwVRhLHHwdJme7c5OxqsGnYeppROE3iPJbsiXQv1MgCto1CFxbSre86De3kqN7QnqdolQtvex77XIk-5FjF5CzNpmsiQSaTm1c6fpWqg=w650-h370-s-no",
-      demo: <img src="https://lh3.googleusercontent.com/pw/AIL4fc8KdhNNe2o7KwzXZU5QR2mhbD9eyRcQlOVDFLqCp8pnfDAANwVRhLHHwdJme7c5OxqsGnYeppROE3iPJbsiXQv1MgCto1CFxbSre86De3kqN7QnqdolQtvex77XIk-5FjF5CzNpmsiQSaTm1c6fpWqg=w650-h370-s-no" alt="Slide 4" />,
+      demo: (
+        <Image
+          src="https://lh3.googleusercontent.com/pw/AIL4fc8KdhNNe2o7KwzXZU5QR2mhbD9eyRcQlOVDFLqCp8pnfDAANwVRhLHHwdJme7c5OxqsGnYeppROE3iPJbsiXQv1MgCto1CFxbSre86De3kqN7QnqdolQtvex77XIk-5FjF5CzNpmsiQSaTm1c6fpWqg=w650-h370-s-no"
+          alt="Slide 4"
+          width={400}
+          height={400}
+        />
+      ),
     },
     {
       id: 5,
       title: "",
       description: "",
       src: "https://lh3.googleusercontent.com/pw/AIL4fc_gIpDzz13_m9-45aRq1rvtnqnQ3UX_OrIvlTpFNS995UakwCqwIQ0GpNzYE4MhjS9qw6sOZadqyQdtt-3Ig1u_4tlHqBSAMWo4z0JIH-EpviVcyCcnyJRs3Wzq7pAP7BsUrCEE6HF9o3QWbSvaoNsv=w1146-h1622-s-no",
-      demo: <img src="https://lh3.googleusercontent.com/pw/AIL4fc_gIpDzz13_m9-45aRq1rvtnqnQ3UX_OrIvlTpFNS995UakwCqwIQ0GpNzYE4MhjS9qw6sOZadqyQdtt-3Ig1u_4tlHqBSAMWo4z0JIH-EpviVcyCcnyJRs3Wzq7pAP7BsUrCEE6HF9o3QWbSvaoNsv=w1146-h1622-s-no" alt="Slide 5" />,
+      demo: (
+        <Image
+          src="https://lh3.googleusercontent.com/pw/AIL4fc_gIpDzz13_m9-45aRq1rvtnqnQ3UX_OrIvlTpFNS995UakwCqwIQ0GpNzYE4MhjS9qw6sOZadqyQdtt-3Ig1u_4tlHqBSAMWo4z0JIH-EpviVcyCcnyJRs3Wzq7pAP7BsUrCEE6HF9o3QWbSvaoNsv=w1146-h1622-s-no"
+          alt="Slide 5"
+          width={400}
+          height={400}
+        />
+      ),
     },
   ];
 

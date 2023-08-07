@@ -51,13 +51,14 @@ const DownloadMaterialsPage = async () => {
 
           <Text className="text-center">
             Students in the HR analytics course may get an individual dataset of
-            Mr. Macky&apos;s with the same structure of variables yet in different
-            data values.
+            Mr. Macky&apos;s with the same structure of variables yet in
+            different data values.
           </Text>
 
           <Text className="text-center">
             For detailed information on variables and dataset structures,
-            download and read the &apos;Introduction&apos; of the case workbook below.
+            download and read the &apos;Introduction&apos; of the case workbook
+            below.
           </Text>
 
           <div className="mt-8">
@@ -73,30 +74,31 @@ const DownloadMaterialsPage = async () => {
 
         <div className="mt-16 grid w-full grid-cols-1 gap-x-24 gap-y-12">
           {filesByCategory.categorizedFiles.map((fileCategory) => {
+            const files = fileCategory.files
+            .filter((file) =>
+              file.fileUserRoles.some(
+                (fileUserRole: any) =>
+                  fileUserRole.userRole === UserRole.STUDENT,
+              ),
+            );
+            if(files.length === 0) return null;
             return (
               <div
                 key={fileCategory.categoryId}
                 className="flex flex-1 flex-col flex-wrap items-center"
               >
-                <Text variation="subsubheading" className='text-center'>
+                <Text variation="subsubheading" className="text-center">
                   {fileCategory.categoryName}
                 </Text>
-                <Text className='text-center mb-4'>
+                <Text className="mb-4 text-center">
                   {fileCategory.categorySubtitle}
                 </Text>
-                <Text className='text-center'>
+                <Text className="text-center">
                   {fileCategory.categoryDescription}
                 </Text>
 
                 <div className="mt-4 flex w-full flex-row justify-center gap-2">
-                  {fileCategory.files
-                    .filter((file) =>
-                      file.fileUserRoles.some(
-                        (fileUserRole: any) =>
-                          fileUserRole.userRole === UserRole.STUDENT,
-                      ),
-                    )
-                    .map((file) => {
+                  {files.map((file) => {
                       return (
                         <div key={file.id} className="flex">
                           <DownloadFileButton file={file} />

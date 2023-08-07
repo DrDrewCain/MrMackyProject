@@ -8,12 +8,12 @@ const about = () => {
         <div className="w-full md:w-1/2">
           <p className="mt-6 animate-fade-down text-gray-500">
             <span className="text-xl font-bold text-gray-900">
-             Coming soon, please come back in a bit!
+              Coming soon, please come back in a bit!
             </span>
           </p>
+        </div>
       </div>
     </div>
-  </div>
   );
 };
 export default about;

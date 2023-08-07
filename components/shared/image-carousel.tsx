@@ -8,7 +8,19 @@ interface ImageCarouselProps {
 }
 
 const ImageCarousel = ({ children }: ImageCarouselProps) => {
-  return <Carousel dynamicHeight autoPlay infiniteLoop interval={3000} swipeable emulateTouch>{children}</Carousel>;
+  return (
+    <Carousel
+      dynamicHeight
+      autoPlay
+      infiniteLoop
+      interval={3000}
+      swipeable
+      emulateTouch
+      showThumbs={false}
+    >
+      {children}
+    </Carousel>
+  );
 };
 
 export default ImageCarousel;

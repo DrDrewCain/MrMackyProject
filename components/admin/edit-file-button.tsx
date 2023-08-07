@@ -11,8 +11,7 @@ import Modal from "../shared/modal";
 
 const editFileSchema = zod.object({
   name: zod.string().min(1, "Name must be at least 1 character long"),
-  description: zod
-    .string(),
+  description: zod.string(),
   fileUrl: zod.string().min(1, "File URL must be at least 1 character long"),
   fileType: zod.nativeEnum(FileType),
   fileCategoryId: zod
@@ -50,7 +49,9 @@ const EditFileButton = ({ file, fileCategories }: EditFileButtonProps) => {
       fileCategoryId: file.categoryId || undefined,
       fileType: file.type,
       fileUrl: file.url,
-      userRoles: file.fileUserRoles.map((fileUserRole) => fileUserRole.userRole),
+      userRoles: file.fileUserRoles.map(
+        (fileUserRole) => fileUserRole.userRole,
+      ),
     },
   });
 
@@ -139,7 +140,10 @@ const EditFileButton = ({ file, fileCategories }: EditFileButtonProps) => {
             {Object.values(UserRole).map((userRole, index) => {
               if (userRole === UserRole.ADMIN) return null;
               return (
-                <div key={userRole} className="flex flex-row items-center gap-2">
+                <div
+                  key={userRole}
+                  className="flex flex-row items-center gap-2"
+                >
                   <input
                     type="checkbox"
                     value={userRole}
@@ -147,7 +151,10 @@ const EditFileButton = ({ file, fileCategories }: EditFileButtonProps) => {
                   />
                   <label htmlFor={userRole}>
                     {userRole.charAt(0) +
-                      userRole.substring(1, userRole.length).toLowerCase().replaceAll("_", " ")}
+                      userRole
+                        .substring(1, userRole.length)
+                        .toLowerCase()
+                        .replaceAll("_", " ")}
                   </label>
                 </div>
               );

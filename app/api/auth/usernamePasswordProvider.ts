@@ -1,13 +1,22 @@
-import { prisma } from '@/lib/prisma';
-import { compare } from 'bcryptjs';
+import { prisma } from "@/lib/prisma";
+import { compare } from "bcryptjs";
 
 export interface CredentialsProvider {
   id: string;
   name: string;
-  authorize: (credentials: { username: string; password: string }) => Promise<User | null>;
-  signIn: (credentials: { username: string; password: string }) => Promise<User | null>;
+  authorize: (credentials: {
+    username: string;
+    password: string;
+  }) => Promise<User | null>;
+  signIn: (credentials: {
+    username: string;
+    password: string;
+  }) => Promise<User | null>;
   getUserByEmail: (email: string) => Promise<User | null>;
-  checkCredentials: (credentials: { username: string; password: string }) => Promise<User | null>;
+  checkCredentials: (credentials: {
+    username: string;
+    password: string;
+  }) => Promise<User | null>;
 }
 
 export type User = {
@@ -16,7 +25,6 @@ export type User = {
   email: string | null;
   password: string;
 };
-
 
 const UsernamePasswordProvider: CredentialsProvider = {
   id: "username-password",
@@ -31,10 +39,7 @@ const UsernamePasswordProvider: CredentialsProvider = {
       return null;
     }
 
-    const isPasswordValid = await compare(
-      credentials.password,
-      user.password
-    );
+    const isPasswordValid = await compare(credentials.password, user.password);
 
     if (!isPasswordValid) {
       return null;
@@ -52,17 +57,17 @@ const UsernamePasswordProvider: CredentialsProvider = {
     const user = await prisma.user.findUnique({
       where: { email: credentials.username },
     });
-  
+
     if (!user || !user.password) {
       return null;
     }
-  
+
     const isPasswordValid = await compare(credentials.password, user.password);
-  
+
     if (!isPasswordValid) {
       return null;
     }
-  
+
     return {
       id: user.id,
       name: user.name || null,
@@ -81,7 +86,10 @@ const UsernamePasswordProvider: CredentialsProvider = {
     }
     return null;
   },
-  checkCredentials: async (credentials: { username: string; password: string }): Promise<User | null> => {
+  checkCredentials: async (credentials: {
+    username: string;
+    password: string;
+  }): Promise<User | null> => {
     // Check the provided credentials without authenticating the user and return the user object or null
     const user = await prisma.user.findUnique({
       where: { email: credentials.username },

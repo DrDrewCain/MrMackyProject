@@ -6,15 +6,14 @@ import { UserRole } from "@prisma/client";
 import { redirect } from "next/navigation";
 
 const AdminLayout = async ({ children }: { children: React.ReactNode }) => {
-    
   // Get user session
   const session = await getServerSession(authOptions);
 
   const role = session?.user?.role;
 
   if (role !== UserRole.ADMIN) {
-    if(!session) {
-        return <FullSignInForm />;
+    if (!session) {
+      return <FullSignInForm />;
     } else {
       redirect("/");
     }

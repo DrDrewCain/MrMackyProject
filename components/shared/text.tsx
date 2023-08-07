@@ -32,9 +32,7 @@ const variationStyles = {
 const Text = ({ variation = "paragraph", className, children }: TextProps) => {
   return (
     <div>
-      <p className={`${className} ${variationStyles[variation]}`}>
-        {children}
-      </p>
+      <p className={`${className} ${variationStyles[variation]}`}>{children}</p>
     </div>
   );
 };

@@ -40,8 +40,8 @@ const SignInForm = () => {
 
   const [showResetPassword, setShowResetPassword] = useState(false);
 
-  if(showResetPassword) {
-    return <RequestResetPassword onClose={() => setShowResetPassword(false)} />
+  if (showResetPassword) {
+    return <RequestResetPassword onClose={() => setShowResetPassword(false)} />;
   }
 
   return (
@@ -85,7 +85,10 @@ const SignInForm = () => {
           )}
         </button>
 
-        <span className='cursor-pointer text-sm text-gray-500 hover:text-gray-600' onClick={() => setShowResetPassword(true)}>
+        <span
+          className="cursor-pointer text-sm text-gray-500 hover:text-gray-600"
+          onClick={() => setShowResetPassword(true)}
+        >
           Forgot your password?
         </span>
       </div>

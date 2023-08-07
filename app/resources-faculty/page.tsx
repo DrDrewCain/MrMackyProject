@@ -28,19 +28,19 @@ const ResourcesFacultyPage = async () => {
             A Sample HRIS Dataset of Mr. Macky&apos;s
           </Text>
           <Text className="mt-6 text-center">
-            This is the sample dataset of Mr. Macky&apos;s to use as a class sample
-            for any demo or instruction purpose. For detailed information on
-            variables and dataset structures, download and read the
-            &apos;Introduction&apos; of the case workbook above. Faculty members can also
-            request us additional datasets to provide a unique dataset for each
-            student (i.e., same data and variable structure but in different
-            data values). Upon request, we will provide the simulated HRIS
-            datasets and answers of each workbook module for those unique
+            This is the sample dataset of Mr. Macky&apos;s to use as a class
+            sample for any demo or instruction purpose. For detailed information
+            on variables and dataset structures, download and read the
+            &apos;Introduction&apos; of the case workbook above. Faculty members
+            can also request us additional datasets to provide a unique dataset
+            for each student (i.e., same data and variable structure but in
+            different data values). Upon request, we will provide the simulated
+            HRIS datasets and answers of each workbook module for those unique
             student datasets.
           </Text>
           <Text className="mt-6 text-center">
-            To submit your request(s), please click the &apos;Contact&apos; top menu to
-            send us your inquiry.
+            To submit your request(s), please click the &apos;Contact&apos; top
+            menu to send us your inquiry.
           </Text>
           <Text className="mt-6 text-center !text-gray-400">
             (Last update: July 15, 2023)
@@ -91,15 +91,13 @@ const ResourcesFacultyPage = async () => {
                 key={fileCategory.categoryId}
                 className="flex flex-1 flex-col flex-wrap items-center"
               >
-                <Text variation="subsubheading" className='text-center'>
+                <Text variation="subsubheading" className="text-center">
                   {fileCategory.categoryName}
                 </Text>
-                <Text className='text-center mb-4'>
+                <Text className="mb-4 text-center">
                   {fileCategory.categorySubtitle}
                 </Text>
-                <Text>
-                  {fileCategory.categoryDescription}
-                </Text>
+                <Text>{fileCategory.categoryDescription}</Text>
 
                 <div className="mt-4 flex flex-col gap-2">
                   {fileCategory.files

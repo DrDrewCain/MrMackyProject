@@ -134,16 +134,18 @@ const ContactForm = () => {
           {message && <p>{message}</p>}
         </div>
 
-        <div className="col-span-2 flex flex-col gap-2" style={{fontSize: "13px"}}>
+        <div
+          className="col-span-2 flex flex-col gap-2"
+          style={{ fontSize: "13px" }}
+        >
           <p>
-              Name: <b>Dr. Michael Sturman & Dr. Hanbo Shim</b>
+            Name: <b>Dr. Michael Sturman & Dr. Hanbo Shim</b>
           </p>
           <p>
             EMAIL: <b>hrsimulation@sturman.org</b>
           </p>
           <p>
-              Address: <b>1946 Sweetwater Ln. Allen, TX 75013
-              </b>
+            Address: <b>1946 Sweetwater Ln. Allen, TX 75013</b>
           </p>
         </div>
       </div>

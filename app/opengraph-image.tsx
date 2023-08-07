@@ -2,7 +2,8 @@
 import { ImageResponse } from "next/server";
 
 export const runtime = "edge";
-export const alt = "Human Resource Analytics Simulation: The Case of Mr. Macky's Cajun Cuisine Restaurants- Building blocks for your Next.js project";
+export const alt =
+  "Human Resource Analytics Simulation: The Case of Mr. Macky's Cajun Cuisine Restaurants- Building blocks for your Next.js project";
 export const contentType = "image/png";
 
 export default async function OG() {
@@ -42,7 +43,8 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          Human Resource Analytics Simulation: The Case of Mr. Macky&apos;s Cajun Cuisine Restaurants
+          Human Resource Analytics Simulation: The Case of Mr. Macky&apos;s
+          Cajun Cuisine Restaurants
         </h1>
       </div>
     ),

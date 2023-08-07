@@ -30,19 +30,20 @@ const DeleteFileButton = ({ file }: DeleteFileButtonProps) => {
         <div className="flex flex-col gap-4 px-16 py-8 shadow-md">
           <h2 className="text-xl">Delete file &quot;{file.name}&quot;</h2>
           <p>
-            Are you sure you want to delete the file <b>{file.name}</b>? This action cannot be undone.
+            Are you sure you want to delete the file <b>{file.name}</b>? This
+            action cannot be undone.
           </p>
 
           <div className="flex flex-row gap-8">
             <Button isLoading={loading} onClick={() => onSubmit()}>
               Delete
             </Button>
-            <Button onClick={() => setModalOpen(false)}>
-              Cancel
-            </Button>
+            <Button onClick={() => setModalOpen(false)}>Cancel</Button>
 
             {/* Add a focusable element inside the modal */}
-            <button style={{ position: 'absolute', top: 0, left: 0, opacity: 0 }} />
+            <button
+              style={{ position: "absolute", top: 0, left: 0, opacity: 0 }}
+            />
           </div>
         </div>
       </Modal>

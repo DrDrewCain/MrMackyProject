@@ -46,7 +46,7 @@ const RequestNewFileButton = ({ name, email }: RequestNewFileButtonProps) => {
 
     setLoading(false);
     setMessage(message);
-    resetForm({message: ''});
+    resetForm({ message: "" });
   });
 
   return (

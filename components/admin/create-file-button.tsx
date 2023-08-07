@@ -11,8 +11,7 @@ import { SubmitHandler, useFieldArray, useForm } from "react-hook-form";
 
 const createFileSchema = zod.object({
   name: zod.string().min(1, "Name must be at least 1 character long"),
-  description: zod
-    .string(),
+  description: zod.string(),
   fileUrl: zod.string().min(1, "File URL must be at least 1 character long"),
   fileType: zod.nativeEnum(FileType),
   fileCategoryId: zod
@@ -131,14 +130,20 @@ const CreateFileButton = ({ fileCategories }: CreateFileButtonProps) => {
             {Object.values(UserRole).map((userRole, index) => {
               if (userRole === UserRole.ADMIN) return null;
               return (
-                <div key={userRole} className='flex flex-row gap-2 items-center'>
+                <div
+                  key={userRole}
+                  className="flex flex-row items-center gap-2"
+                >
                   <input
                     key={userRole}
                     type="checkbox"
                     value={userRole}
                     {...register("userRoles")}
                   />
-                  <label htmlFor={userRole}>{userRole.charAt(0) + userRole.substring(1,userRole.length).toLowerCase()}</label>
+                  <label htmlFor={userRole}>
+                    {userRole.charAt(0) +
+                      userRole.substring(1, userRole.length).toLowerCase()}
+                  </label>
                 </div>
               );
             })}

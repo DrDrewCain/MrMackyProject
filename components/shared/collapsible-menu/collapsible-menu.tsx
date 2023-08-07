@@ -25,9 +25,7 @@ const CollapsibleMenu = ({
           >
             <span>{title}</span>
             <ChevronUpIcon
-              className={`${
-                open ? "rotate-180 transform" : ""
-              } h-5 w-5`}
+              className={`${open ? "rotate-180 transform" : ""} h-5 w-5`}
             />
           </Disclosure.Button>
           <Transition

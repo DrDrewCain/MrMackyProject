@@ -1,11 +1,7 @@
 "use client";
 import Modal from "@/components/shared/modal";
 import { NextRouter } from "next/router";
-import {
-  useCallback,
-  useMemo,
-  useState
-} from "react";
+import { useCallback, useMemo, useState } from "react";
 import FullSignInForm from "./full-sign-in-form";
 
 interface SignInModalProps {
@@ -24,7 +20,7 @@ export const SignInModal = ({
       <FullSignInForm />
     </Modal>
   );
-};  
+};
 
 export function useSignInModal() {
   const [showSignInModal, setShowSignInModal] = useState(false);
@@ -33,7 +29,9 @@ export function useSignInModal() {
     return (
       <SignInModal
         showSignInModal={showSignInModal}
-        setShowSignInModal={setShowSignInModal} router={undefined}      />
+        setShowSignInModal={setShowSignInModal}
+        router={undefined}
+      />
     ); // Adjusted prop type
   }, [showSignInModal, setShowSignInModal]);
 

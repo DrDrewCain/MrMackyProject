@@ -1,1 +1,1 @@
-export const DEPLOY_URL = '';
+export const DEPLOY_URL = "";
